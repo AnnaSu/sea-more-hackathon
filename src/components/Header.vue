@@ -4,7 +4,7 @@
         <div class="header__time">
             <div>
                 <img class="header-icon header-icon--arrow" src="../assets/icon_back.svg" alt="">
-                <p class="header__time__name">2017/4/28 上午 9 點</p>
+                <p class="header__time__name">2017/4/30 上午 9 點</p>
                 <img class="header-icon header-icon--arrow" src="../assets/icon_next.svg" alt="">
             </div>
         </div>
