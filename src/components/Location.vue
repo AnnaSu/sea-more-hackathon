@@ -1,13 +1,25 @@
 <template>
     <div class="location">
-        <h1 class="location__city">新北市</h1>
-        <h1 class="location__name">白沙灣</h1>
+        <h1 class="location__city">{{cityStr}}</h1>
+        <h1 class="location__name">{{nameStr}}</h1>
         <img class="location__icon" src="../assets/icon_pin.svg" alt="">
     </div>  
 </template>
 
 <script>
-    
+    export default {
+        props: ['pageIndex'],
+        data() {
+            var pageIndex = this.pageIndex;
+            var citys = ['新北市', '屏東縣', '新北市'];
+            var names = [ '白沙灣', '墾丁海水浴場', '福隆海水浴場'];
+
+            return {
+                cityStr: citys[pageIndex],
+                nameStr: names[pageIndex]
+            }
+        }
+    }
 </script>
 
 <style lang="scss">
