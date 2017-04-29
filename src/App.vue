@@ -5,7 +5,7 @@
   <md-card>
     <md-card-actions v-md-ink-ripple>
       <div class="md-subhead">
-        <span>See more</span> 
+        <Header />
       </div>
       <md-button class="md-icon-button"
                  target="_blank"
@@ -75,6 +75,7 @@
 
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper';
+import Header from './components/Header.vue';
 import Pages from './components/Pages.vue';
 export default {
   name: 'app',
@@ -86,6 +87,7 @@ export default {
   components: {
     swiper,
     swiperSlide,
+    Header,
     Pages
   }
 }
