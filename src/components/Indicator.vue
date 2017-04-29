@@ -1,12 +1,19 @@
 <template>
     <div class="indicator-container">
-
-            <div v-for="item in indicators" :class="item.className">
+        <div class="indicator-row">
+            <div v-for="(item, index) in indicatorsRow1" :class="item.className">
                 <div class="name">{{ item.name }}</div>
                 <img class="icon" :src="item.icon" />
                 <div class="value">{{ item.value }}</div>
             </div>
-
+        </div>
+        <div class="indicator-row">
+            <div v-for="(item, index) in indicatorsRow2" :class="item.className">
+                <div class="name">{{ item.name }}</div>
+                <img class="icon" :src="item.icon" />
+                <div class="value">{{ item.value }}</div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -15,7 +22,7 @@ export default {
   name: 'indicator',
   data () {
     return {
-        indicators: [
+        indicatorsRow1: [
             {
                 className: 'indicator-item rainfall',
                 name: '降雨機率',
@@ -26,14 +33,16 @@ export default {
                 className: 'indicator-item uv',
                 name: '紫外線',
                 icon: '/src/assets/icon_uv.svg',
-                value: '15%'
+                value: '中量'
             },
             {
                 className: 'indicator-item temperature-diff',
                 name: '溫差',
                 icon: '/src/assets/icon_temp.svg',
                 value: '11°'
-            },
+            }
+        ],
+        indicatorsRow2: [
             {
                 className: 'indicator-item tidal',
                 name: '潮汐',
@@ -59,20 +68,39 @@ export default {
 </script>
 
 <style lang="css">
-.indicator-item:nth-child(1) {
+.indicator-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.indicator-row {
+    display: flex;
+    position: relative;
+}
+.indicator-row:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    width: 280px;
+    height: 1px;
+    background-color: #20D4E9;
+}
+
+.indicator-row:nth-child(1) .indicator-item:nth-child(1) {
   border-radius: 10px 0 0 0;
 }
-.indicator-item:nth-child(3) {
+.indicator-row:nth-child(1) .indicator-item:nth-child(3) {
   border-radius: 0 10px 0 0;
 }
-.indicator-item:nth-child(4) {
+.indicator-row:nth-child(2) .indicator-item:nth-child(1) {
   border-radius: 0 0 0 10px;
-  clear: left;
 }
-.indicator-item:nth-child(6) {
+.indicator-row:nth-child(2) .indicator-item:nth-child(3) {
   border-radius: 0 0 10px 0;
-  clear: right;
 }
+
 .indicator-item {
     color: #485F79;
     width: 100px;
@@ -83,8 +111,18 @@ export default {
     flex-direction: column;
     align-items: center;
 }
+.indicator-item > .name {
+    opacity: .7;
+    font-size: 12px;
+    line-height: 1;
+}
+.indicator-item > .value {
+    font-size: 14px;
+    line-height: 1;
+}
 .indicator-item > .icon {
     width: 30px;
     height: 30px;
+    margin: 9px 0 12px 0;
 }
 </style>
