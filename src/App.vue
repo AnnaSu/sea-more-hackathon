@@ -16,10 +16,6 @@
       <!-- swiper -->
       <swiper :options="swiperOption">
         <swiper-slide><Pages /></swiper-slide>
-        <swiper-slide><img src="./assets/2.png"><h1>Hello 2</h1></swiper-slide>
-        <swiper-slide><img src="./assets/3.png"><h1>Hello 3</h1></swiper-slide>
-        <swiper-slide><img src="./assets/4.png"><h1>Hello 4</h1></swiper-slide>
-        <swiper-slide><img src="./assets/5.png"><h1>Hello 5</h1></swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
     </md-card-media>
