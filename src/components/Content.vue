@@ -1,7 +1,7 @@
 <template>
     <div>
         <Location />
-        <Temperature />
+        <Temperature :pageIndex="this.pageIndex" />
         <Indicator />
         <Suggestion />
         <Ref />
@@ -15,6 +15,7 @@
     import Suggestion from './Suggestion.vue';
     import Ref from './Ref.vue';
     export default {
+        props: ['pageIndex'],
         components: {
             Location,
             Temperature,

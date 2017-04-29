@@ -12,7 +12,13 @@
 export default {
   name: 'non-vue-line-chart',
   template: '<div></div>',
+  props: ['pageIndex'],
   mounted() {
+    var charts = document.querySelectorAll('.temperature__info__chart');
+    for(var i = 0; i < charts.length; i++){
+        charts[i].classList.add('chart-'+i);
+    }
+    var pageIndex = this.pageIndex;
     function create(target, config, data, color) {
         var line = d3.line()
             .x(config.line.x)
@@ -76,7 +82,7 @@ export default {
             width = 720 - margin.left - margin.right, // svgWidth - margin.left - margin.right
             height = 100 - margin.top - margin.bottom; // svgHeight - margin.top - margin.bottom
 
-        var svg = d3.select('.temperature__info__chart').append('svg')
+        var svg = d3.select('.temperature__info__chart.chart-'+pageIndex).append('svg')
             .attr('width', width + margin.left + margin.right)
             .attr('height', height + margin.top + margin.bottom);
 

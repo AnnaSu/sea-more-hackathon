@@ -15,7 +15,8 @@
     <md-card-media>
       <!-- swiper -->
       <swiper :options="swiperOption">
-        <swiper-slide><Pages /></swiper-slide>
+        <swiper-slide><Pages pageIndex="0"/></swiper-slide>
+        <swiper-slide><Pages pageIndex="1"/></swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
     </md-card-media>
