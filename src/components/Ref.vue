@@ -1,6 +1,13 @@
 <template>
     <div>
     <div class="ref">
+        <h3 class="ref__title">人氣美食</h3>
+        <article class="ref__article" v-for="food in foods">
+            <div  class="ref__article__cover"><img class="ref__article__img" :src="food.coverImg" alt=""></div>
+            <p class="ref__article__title">{{food.title}}</p>
+        </article>
+    </div>
+    <div class="ref">
         <h3 class="ref__title">約會聖地</h3>
         <article class="ref__article" v-for="like in likes">
             <div  class="ref__article__cover"><img class="ref__article__img" :src="like.coverImg" alt=""></div>
@@ -36,6 +43,16 @@ export default {
                 {   
                     coverImg: 'https://pic.pimg.tw/miihuang/1405508283-3780237105.jpg',
                     title: '【美妝】夏日限定♥♥到海邊也不用擔心的快速底妝教學'
+                }
+            ],
+            foods: [
+                {   
+                    coverImg: 'https://pic.pimg.tw/beautychu060/1431092720-4014355429_n.jpg',
+                    title: '墾丁美食‧南灣地中海料理【迷路小章魚】、好吃【橘子早餐】、泰緬料理【弄海】、墾丁大街'
+                },
+                {   
+                    coverImg: 'https://pic.pimg.tw/wkitty/1470804327-406507553.jpg',
+                    title: '墾丁大街必吃美食小吃14攤'
                 }
             ]
         }
