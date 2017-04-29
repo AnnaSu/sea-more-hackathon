@@ -1,7 +1,7 @@
 <template>
     <div class="temperature">
         <div class="temperature__info">
-            <img class="temperature__info__icon" src="../assets/icon_sun.svg" alt="">
+            <img class="temperature__info__icon" :src="weatherType" alt="">
             <p class="temperature__info__number">{{ tempStr }}</p>
             <div class="temperature__info__chart"></div>
         </div>
@@ -15,9 +15,11 @@ export default {
   props: ['pageIndex'],
   data () {
     var pageIndex = this.pageIndex;
-    var temp = ['氣溫 19°', '氣溫 17°', '氣溫 20°']
+    var temp = ['氣溫 19°', '氣溫 17°', '氣溫 20°'];
+    var weatherType = ["/src/assets/icon_sun.svg", "/src/assets/icon_cloud.svg", "/src/assets/icon_rain.svg"];
     return {
-      tempStr: temp[pageIndex]
+      tempStr: temp[pageIndex],
+      weatherType: weatherType[pageIndex]
     }
   },
   mounted() {
