@@ -14,34 +14,51 @@
 <script>
 
 export default {
+    props: ['pageIndex'],
     data () {
+        var pageIndex = this.pageIndex;
+        var suggestions = [];
+        suggestions[0] = [
+            {   
+                name: '比基尼',
+                iconUrl: './src/assets/icon_bikini.svg'
+            },
+            {   
+                name: '太陽眼鏡',
+                iconUrl: './src/assets/icon_glass.svg'
+            },
+            {   
+                name: '草帽',
+                iconUrl: './src/assets/icon_hat.svg'
+            },
+            {   
+                name: '乳液',
+                iconUrl: './src/assets/icon_lotion.svg'
+            }
+        ]
+        suggestions[1] = [
+            {   
+                name: '雨傘',
+                iconUrl: './src/assets/icon_umbrella.svg'
+            },
+            {   
+                name: '短褲',
+                iconUrl: './src/assets/icon_pant.svg'
+            }
+        ]
+        suggestions[2] = [
+            {   
+                name: '乳液',
+                iconUrl: './src/assets/icon_lotion.svg'
+            },
+            {   
+                name: '草帽',
+                iconUrl: './src/assets/icon_glass.svg'
+            }
+        ]
+
         return {
-            suggestions: [
-                {   
-                    name: '比基尼',
-                    iconUrl: './src/assets/icon_bikini.svg'
-                },
-                {   
-                    name: '太陽眼鏡',
-                    iconUrl: './src/assets/icon_glass.svg'
-                },
-                {   
-                    name: '雨傘',
-                    iconUrl: './src/assets/icon_umbrella.svg'
-                },
-                {   
-                    name: '草帽',
-                    iconUrl: './src/assets/icon_hat.svg'
-                },
-                {   
-                    name: '乳液',
-                    iconUrl: './src/assets/icon_lotion.svg'
-                },
-                {   
-                    name: '短褲',
-                    iconUrl: './src/assets/icon_pant.svg'
-                }
-            ]
+            suggestions: suggestions[pageIndex]
         }
     }
 }
