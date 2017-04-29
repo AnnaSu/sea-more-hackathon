@@ -2,7 +2,7 @@
     <div class="temperature">
         <div class="temperature__info">
             <img class="temperature__info__icon" src="../assets/icon_sun.svg" alt="">
-            <p class="temperature__info__number">氣溫 32°</p>
+            <p class="temperature__info__number">{{ tempStr }}</p>
             <div class="temperature__info__chart"></div>
         </div>
     </div>
@@ -13,6 +13,13 @@ export default {
   name: 'non-vue-line-chart',
   template: '<div></div>',
   props: ['pageIndex'],
+  data () {
+    var pageIndex = this.pageIndex;
+    var temp = ['氣溫 19°', '氣溫 17°', '氣溫 20°']
+    return {
+      tempStr: temp[pageIndex]
+    }
+  },
   mounted() {
     var charts = document.querySelectorAll('.temperature__info__chart');
     for(var i = 0; i < charts.length; i++){
@@ -92,7 +99,7 @@ export default {
 
         var timeformat = d3.timeFormat('%H:00');
 
-        var mainData = [
+        var mainData = [[
             { date: new Date(2016, 10, 1, 0), count: 19 },
             { date: new Date(2016, 10, 1, 3), count: 16 },
             { date: new Date(2016, 10, 1, 6), count: 16 },
@@ -105,7 +112,33 @@ export default {
             { date: new Date(2016, 10, 2, 3), count: 15 },
             { date: new Date(2016, 10, 2, 6), count: 16 },
             { date: new Date(2016, 10, 2, 9), count: 18 },
-        ];
+        ],[
+            { date: new Date(2016, 10, 1, 0), count: 17 },
+            { date: new Date(2016, 10, 1, 3), count: 16 },
+            { date: new Date(2016, 10, 1, 6), count: 16 },
+            { date: new Date(2016, 10, 1, 9), count: 18 },
+            { date: new Date(2016, 10, 1, 12), count: 22 },
+            { date: new Date(2016, 10, 1, 15), count: 26 },
+            { date: new Date(2016, 10, 1, 18), count: 22 },
+            { date: new Date(2016, 10, 1, 21),  count: 18 },
+            { date: new Date(2016, 10, 2, 0),  count: 18 },
+            { date: new Date(2016, 10, 2, 3), count: 15 },
+            { date: new Date(2016, 10, 2, 6), count: 16 },
+            { date: new Date(2016, 10, 2, 9), count: 18 },
+        ],[
+            { date: new Date(2016, 10, 1, 0), count: 20 },
+            { date: new Date(2016, 10, 1, 3), count: 16 },
+            { date: new Date(2016, 10, 1, 6), count: 16 },
+            { date: new Date(2016, 10, 1, 9), count: 18 },
+            { date: new Date(2016, 10, 1, 12), count: 24 },
+            { date: new Date(2016, 10, 1, 15), count: 26 },
+            { date: new Date(2016, 10, 1, 18), count: 22 },
+            { date: new Date(2016, 10, 1, 21),  count: 18 },
+            { date: new Date(2016, 10, 2, 0),  count: 18 },
+            { date: new Date(2016, 10, 2, 3), count: 15 },
+            { date: new Date(2016, 10, 2, 6), count: 16 },
+            { date: new Date(2016, 10, 2, 9), count: 18 },
+        ]];
 
 
         var config = {
@@ -114,12 +147,12 @@ export default {
             height: height,
             scale: {
                 x: d3.scaleTime()
-                    .domain([mainData[0].date, mainData[mainData.length-1].date])
+                    .domain([mainData[pageIndex][0].date, mainData[pageIndex][mainData[pageIndex].length-1].date])
                     .range([0, width]),
                 y: d3.scaleLinear()
                     .domain([
-                        d3.min(mainData, function(d) { return d.count; }),
-                        d3.max(mainData, function(d) { return d.count; })
+                        d3.min(mainData[pageIndex], function(d) { return d.count; }),
+                        d3.max(mainData[pageIndex], function(d) { return d.count; })
                     ])
                     .range([height, 0])
                     .nice()
@@ -134,11 +167,11 @@ export default {
                   .attr('x', 0);
             },
             line: {
-                x: function(d, i){return config.scale.x(mainData[i].date)},
+                x: function(d, i){return config.scale.x(mainData[pageIndex][i].date)},
                 y: function(d){return config.scale.y(d.count)}
             },
             points: {
-                cx: function(d, i) {return config.scale.x(mainData[i].date)},
+                cx: function(d, i) {return config.scale.x(mainData[pageIndex][i].date)},
                 cy: function(d) {return config.scale.y(d.count);}
             },
             format: {
@@ -147,7 +180,7 @@ export default {
             }
         };
 
-        create(container, config, mainData, '#fff');
+        create(container, config, mainData[pageIndex], '#fff');
     };
     init();
   }

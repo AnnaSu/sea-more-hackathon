@@ -20,9 +20,9 @@
 <script>
 export default {
   name: 'indicator',
+  props: ['pageIndex'],
   data () {
-    return {
-        indicatorsRow1: [
+    var row1 = [[
             {
                 className: 'indicator-item rainfall',
                 name: '降雨機率',
@@ -41,8 +41,27 @@ export default {
                 icon: '/src/assets/icon_temp.svg',
                 value: '11°'
             }
-        ],
-        indicatorsRow2: [
+        ],[
+            {
+                className: 'indicator-item rainfall',
+                name: '降雨機率',
+                icon: '/src/assets/icon_umbrella.svg',
+                value: '15%'
+            },
+            {
+                className: 'indicator-item uv',
+                name: '紫外線',
+                icon: '/src/assets/icon_uv.svg',
+                value: '中量'
+            },
+            {
+                className: 'indicator-item temperature-diff',
+                name: '溫差',
+                icon: '/src/assets/icon_temp.svg',
+                value: '11°'
+            }
+        ]];
+    var row2 = [[
             {
                 className: 'indicator-item tidal',
                 name: '潮汐',
@@ -61,7 +80,30 @@ export default {
                 icon: '/src/assets/icon_wind.svg',
                 value: '3.2km/hr'
             }
-        ]
+        ],[
+            {
+                className: 'indicator-item tidal',
+                name: '潮汐',
+                icon: '/src/assets/icon_tidal.svg',
+                value: '乾潮'
+            },
+            {
+                className: 'indicator-item wave-height',
+                name: '浪高',
+                icon: '/src/assets/icon_wave.svg',
+                value: '0.8m'
+            },
+            {
+                className: 'indicator-item wind',
+                name: '風速',
+                icon: '/src/assets/icon_wind.svg',
+                value: '3.2km/hr'
+            }
+        ]];
+    var pageIndex = this.pageIndex;
+    return {
+        indicatorsRow1: row1[pageIndex],
+        indicatorsRow2: row2[pageIndex]
     }
   }
 }

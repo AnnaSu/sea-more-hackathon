@@ -2,7 +2,7 @@
     <div>
         <Location />
         <Temperature :pageIndex="this.pageIndex" />
-        <Indicator />
+        <Indicator :pageIndex="this.pageIndex"/>
         <Suggestion />
         <Ref />
     </div>
