@@ -101,7 +101,7 @@ export default {
 .sea-more {
   font-family: Quicksand, Helvetica, Arial, sans-serif;
   width: 375px;
-  height: 630px;
+  height: auto;
   color: white;
   line-height: 18px;
   letter-spacing: 1px;
