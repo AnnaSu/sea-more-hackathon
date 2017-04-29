@@ -24,11 +24,8 @@ export default {
   },
   mounted() {
     var pageIndex = this.pageIndex,
-        bgColor = ['sun', 'rain', 'dusk'],
-        app = document.querySelector('.sea-more'),
         charts = document.querySelectorAll('.temperature__info__chart');
 
-    app.classList.add('sea-more--'+bgColor[pageIndex])
     for(var i = 0; i < charts.length; i++){
         charts[i].classList.add('chart-'+i);
     }
