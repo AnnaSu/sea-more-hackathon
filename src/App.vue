@@ -15,7 +15,7 @@
     <md-card-media>
       <!-- swiper -->
       <swiper :options="swiperOption">
-        <swiper-slide><Apage /></swiper-slide>
+        <swiper-slide><Pages /></swiper-slide>
         <swiper-slide><img src="./assets/2.png"><h1>Hello 2</h1></swiper-slide>
         <swiper-slide><img src="./assets/3.png"><h1>Hello 3</h1></swiper-slide>
         <swiper-slide><img src="./assets/4.png"><h1>Hello 4</h1></swiper-slide>
@@ -75,7 +75,7 @@
 
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper';
-import Apage from './components/a.vue';
+import Pages from './components/Pages.vue';
 export default {
   name: 'app',
   data () {
@@ -86,7 +86,7 @@ export default {
   components: {
     swiper,
     swiperSlide,
-    Apage
+    Pages
   }
 }
 </script>

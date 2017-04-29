@@ -1,7 +1,6 @@
 <template>
     <div>
-        <img src="../assets/1.png">
-        <h1> Hello 1 </h1>
+        <h3> Indicator </h3>
     </div>  
 </template>
 
