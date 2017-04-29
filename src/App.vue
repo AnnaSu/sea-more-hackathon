@@ -1,7 +1,7 @@
 <!-- The ref attr used to find the swiper instance -->
 
 <template>
-<div>
+<div class="sea-more">
   <md-card>
     <md-card-actions v-md-ink-ripple>
       <div class="md-subhead">
@@ -95,12 +95,27 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.sea-more {
+  font-family: Quicksand, Helvetica, Arial, sans-serif;
+  width: 375px;
+  height: 630px;
+  color: white;
+  line-height: 18px;
+  letter-spacing: 1px;
+  background: #1A2980;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #00C9FF, #92FE9D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #00C9FF, #92FE9D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-sizing: border-box;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 h1, h2 {
