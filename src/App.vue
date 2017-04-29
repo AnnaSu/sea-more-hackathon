@@ -18,11 +18,14 @@
         <swiper-slide><Pages pageIndex="0"/></swiper-slide>
         <swiper-slide><Pages pageIndex="1"/></swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
+            <div class="space-man">
+                <div class="chat">太陽很大喔～建議中午時段不要曝曬超過20分鐘！</div>
+                <img src="/src/assets/spaceman.svg">
+            </div>
       </swiper>
     </md-card-media>
   </md-card>
-  
-  </div>
+</div>
 </template>
 
 <script>
@@ -103,6 +106,7 @@ export default {
   font-family: Quicksand, Helvetica, Arial, sans-serif;
   width: 375px;
   height: auto;
+  margin-top: 20px;
   color: white;
   line-height: 18px;
   letter-spacing: 1px;
@@ -165,8 +169,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -177,7 +181,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -198,5 +202,31 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+.swiper-slide {
+    height: 600px !important;
+    overflow-y: scroll;
+}
+.space-man {
+    background-color: rgba(0,0,0,.2);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: -100px;
+    z-index: 30;
+    display: flex;
+    transition: all 0.6s;
+}
+.space-man .chat {
+    width: calc(100% - 100px);
+    margin: 20px 10px 20px 20px;
+    background-color: #fff;
+    color: #576372;
+    border-radius: 10px;
+    padding: 10px;
+}
+.space-man img {
+    width: 100px;
+    height: 100px;
 }
 </style>
