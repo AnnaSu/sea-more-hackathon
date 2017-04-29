@@ -167,7 +167,7 @@ export default {
     text-align: center;
 }
 .temperature__info__chart {
-    margin-top: 10px;
+    margin-top: 33px;
     overflow-x: scroll;
     overflow-y: hidden;
     width: 375px;
