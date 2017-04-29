@@ -2,30 +2,30 @@
     <div>
         <h2> Content </h2>
         <Location />
-        <Template />
+        <Temperature />
         <Indicator />
         <Suggestion />
         <Ref />
-    </div>  
+    </div>
 </template>
 
 <script>
     import Location from './Location.vue';
-    import Template from './Tempture.vue';
+    import Temperature from './Temperature.vue';
     import Indicator from './Indicator.vue';
     import Suggestion from './Suggestion.vue';
     import Ref from './Ref.vue';
     export default {
         components: {
             Location,
-            Template,
+            Temperature,
             Indicator,
             Suggestion,
             Ref
         }
-    }  
+    }
 </script>
 
 <style lang="css">
-    
+
 </style>

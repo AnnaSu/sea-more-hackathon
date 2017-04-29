@@ -1,13 +1,13 @@
 <template>
     <div>
-        <h3> Tempture </h3>
-    </div>  
+        <h3> Temperature </h3>
+    </div>
 </template>
 
 <script>
-    
+
 </script>
 
 <style lang="css">
-    
+
 </style>
