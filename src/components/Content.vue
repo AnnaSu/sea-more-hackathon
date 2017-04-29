@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h2> Content </h2>
         <Location />
         <Temperature />
         <Indicator />
