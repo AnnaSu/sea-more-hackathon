@@ -104,9 +104,6 @@ export default {
         var timeformat = d3.timeFormat('%H:00');
 
         var mainData = [[
-            { date: new Date(2016, 10, 1, 0), count: 19 },
-            { date: new Date(2016, 10, 1, 3), count: 16 },
-            { date: new Date(2016, 10, 1, 6), count: 16 },
             { date: new Date(2016, 10, 1, 9), count: 18 },
             { date: new Date(2016, 10, 1, 12), count: 24 },
             { date: new Date(2016, 10, 1, 15), count: 26 },
@@ -116,10 +113,10 @@ export default {
             { date: new Date(2016, 10, 2, 3), count: 15 },
             { date: new Date(2016, 10, 2, 6), count: 16 },
             { date: new Date(2016, 10, 2, 9), count: 18 },
+            { date: new Date(2016, 10, 2, 12), count: 25 },
+            { date: new Date(2016, 10, 2, 15), count: 25 },
+            { date: new Date(2016, 10, 2, 18), count: 20 }
         ],[
-            { date: new Date(2016, 10, 1, 0), count: 17 },
-            { date: new Date(2016, 10, 1, 3), count: 16 },
-            { date: new Date(2016, 10, 1, 6), count: 16 },
             { date: new Date(2016, 10, 1, 9), count: 18 },
             { date: new Date(2016, 10, 1, 12), count: 22 },
             { date: new Date(2016, 10, 1, 15), count: 26 },
@@ -129,10 +126,10 @@ export default {
             { date: new Date(2016, 10, 2, 3), count: 15 },
             { date: new Date(2016, 10, 2, 6), count: 16 },
             { date: new Date(2016, 10, 2, 9), count: 18 },
+            { date: new Date(2016, 10, 2, 12), count: 26 },
+            { date: new Date(2016, 10, 2, 15), count: 24 },
+            { date: new Date(2016, 10, 2, 18), count: 20 }
         ],[
-            { date: new Date(2016, 10, 1, 0), count: 20 },
-            { date: new Date(2016, 10, 1, 3), count: 16 },
-            { date: new Date(2016, 10, 1, 6), count: 16 },
             { date: new Date(2016, 10, 1, 9), count: 18 },
             { date: new Date(2016, 10, 1, 12), count: 24 },
             { date: new Date(2016, 10, 1, 15), count: 26 },
@@ -142,6 +139,9 @@ export default {
             { date: new Date(2016, 10, 2, 3), count: 15 },
             { date: new Date(2016, 10, 2, 6), count: 16 },
             { date: new Date(2016, 10, 2, 9), count: 18 },
+            { date: new Date(2016, 10, 2, 12), count: 25 },
+            { date: new Date(2016, 10, 2, 15), count: 25 },
+            { date: new Date(2016, 10, 2, 18), count: 20 }
         ]];
 
 
