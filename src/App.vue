@@ -1,8 +1,9 @@
 <!-- The ref attr used to find the swiper instance -->
 <template>
   <div class="sea-more sea-more--sun">
-  <div class="md-subhead">
+      <div class="md-subhead">
         <Header />
+        
       </div>
       <swiper :options="swiperOption" ref="mySwiper">
       <!-- slides -->
@@ -54,6 +55,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.swiper-pagination {
+  width: 100%;
 }
 
 .sea-more {
