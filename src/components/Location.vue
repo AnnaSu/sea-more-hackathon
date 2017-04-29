@@ -1,5 +1,6 @@
 <template>
     <div class="location">
+        <div class="swiper-pagination"  slot="pagination"></div>
         <h1 class="location__city">{{cityStr}}</h1>
         <h1 class="location__name">{{nameStr}}</h1>
         <img class="location__icon" src="../assets/icon_pin.svg" alt="">

@@ -1,6 +1,5 @@
 <template>
     <header class="header">
-    
         <img class="header-icon header__setting" src="../assets/icon_setting.svg" alt="">
         <div class="header__time">
             <div>
@@ -10,7 +9,6 @@
             </div>
         </div>
         <img class="header-icon header__pin" src="../assets/icon_pin_plus.svg" alt="">
-        <div class="swiper-pagination"  slot="pagination"></div>
     </header>  
 </template>
 
@@ -20,13 +18,8 @@
 
 <style lang="scss">
     .header {
-        height: 40px;
-        padding: 10px 0 0;
+        padding: 10px;
         text-align: center;
-
-        .swiper-pagination-bullet {
-            margin-right: 5px;
-        }
 
         .header-icon {
             width: 20px;

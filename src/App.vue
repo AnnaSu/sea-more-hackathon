@@ -3,7 +3,6 @@
   <div class="sea-more sea-more--sun">
       <div class="md-subhead">
         <Header />
-        
       </div>
       <swiper :options="swiperOption" ref="mySwiper">
       <!-- slides -->
@@ -59,6 +58,11 @@ export default {
 
 .swiper-pagination {
   width: 100%;
+  margin-top: -35px;
+}
+
+.swiper-pagination-bullet {
+  margin-right: 5px;
 }
 
 .sea-more {
