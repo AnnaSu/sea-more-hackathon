@@ -1,8 +1,8 @@
 <template>
     <div class="suggestion">
         <h3 class="suggestion__title">外出建議</h3>
-        <ul class="suggestion__lists" v-for="suggestion in suggestions">
-            <li class="suggestion__list">
+        <ul class="suggestion__lists">
+            <li class="suggestion__list" v-for="suggestion in suggestions">
                 <div class="suggestion__list__bg">
                     <img class="suggestion__list__icon" :src="suggestion.iconUrl" alt="">
                 </div>
@@ -20,6 +20,26 @@ export default {
                 {   
                     name: '比基尼',
                     iconUrl: './src/assets/icon_bikini.svg'
+                },
+                {   
+                    name: '太陽眼鏡',
+                    iconUrl: './src/assets/icon_glass.svg'
+                },
+                {   
+                    name: '雨傘',
+                    iconUrl: './src/assets/icon_umbrella.svg'
+                },
+                {   
+                    name: '草帽',
+                    iconUrl: './src/assets/icon_hat.svg'
+                },
+                {   
+                    name: '乳液',
+                    iconUrl: './src/assets/icon_lotion.svg'
+                },
+                {   
+                    name: '短褲',
+                    iconUrl: './src/assets/icon_pant.svg'
                 }
             ]
         }
@@ -40,6 +60,13 @@ export default {
 
     .suggestion__lists {
         .suggestion__list {
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 10px;
+
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
 
             .suggestion__list__bg {
                 width: 40px;
