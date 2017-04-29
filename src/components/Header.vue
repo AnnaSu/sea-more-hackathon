@@ -23,6 +23,7 @@
             height: 20px;
             display: inline-block;
             vertical-align: bottom;
+            cursor: pointer;
         }
 
         .header__setting {
@@ -37,6 +38,7 @@
 
         .header__location, .header__location__name {
             display: inline-block;
+            cursor: pointer;
             text-align: center;
         }
     }
