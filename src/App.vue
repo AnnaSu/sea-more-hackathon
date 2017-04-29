@@ -106,13 +106,28 @@ export default {
   color: white;
   line-height: 18px;
   letter-spacing: 1px;
-  background: #1A2980;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #00C9FF, #92FE9D);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #00C9FF, #92FE9D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   box-sizing: border-box;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+
+  &.sea-more--sun {
+    background: #00C9FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #00C9FF, #92FE9D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #00C9FF, #92FE9D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  &.sea-more--rain {
+      background: #859398;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to bottom, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to bottom, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  &.sea-more--dusk {
+      background: #FF5F6D;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to bottom, #FF5F6D, #FFC371);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to bottom, #FF5F6D, #FFC371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
 }
 
 h1, h2 {
