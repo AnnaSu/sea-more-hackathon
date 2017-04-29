@@ -37,9 +37,9 @@ export default {
             },
             {
                 className: 'indicator-item temperature-diff',
-                name: '溫差',
+                name: '海水溫度',
                 icon: '/src/assets/icon_temp.svg',
-                value: '11°'
+                value: '20°'
             }
         ],[
             {
@@ -56,9 +56,9 @@ export default {
             },
             {
                 className: 'indicator-item temperature-diff',
-                name: '溫差',
+                name: '海水溫度',
                 icon: '/src/assets/icon_temp.svg',
-                value: '11°'
+                value: '22°'
             }
         ]];
     var row2 = [[
