@@ -1,7 +1,7 @@
 <!-- The ref attr used to find the swiper instance -->
 
 <template>
-<div class="sea-more">
+<div class="sea-more sea-more--sun">
   <md-card>
     <md-card-actions v-md-ink-ripple>
       <div class="md-subhead">
@@ -17,6 +17,7 @@
       <swiper :options="swiperOption">
         <swiper-slide><Pages pageIndex="0"/></swiper-slide>
         <swiper-slide><Pages pageIndex="1"/></swiper-slide>
+        <swiper-slide><Pages pageIndex="2"/></swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
             <div class="space-man">
                 <div class="chat">太陽很大喔～建議中午時段不要曝曬超過20分鐘！</div>
