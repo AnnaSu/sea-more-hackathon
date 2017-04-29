@@ -84,7 +84,7 @@ export default {
         var container = svg.append('g')
             .attr('transform', `translate(${margin.left}, ${margin.top})`)
 
-        var Ymd = d3.timeFormat('%H:00');
+        var timeformat = d3.timeFormat('%H:00');
 
         var mainData = [
             { date: new Date(2016, 10, 1, 0), count: 19 },
@@ -120,7 +120,7 @@ export default {
             },
             ticks: { x: 12, y: 3 },
             ticksFormat: function(d, i){
-              return Ymd(d);
+              return timeformat(d);
             },
             ticksTextSetting: function(selector){
               selector
@@ -141,7 +141,6 @@ export default {
             }
         };
 
-        // Axis(container, config).create();
         create(container, config, mainData, '#fff');
     };
     init();
