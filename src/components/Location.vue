@@ -25,7 +25,7 @@
 <style lang="scss">
     .location {
         text-align: center;
-        margin-top: 60px;
+        margin-top: 40px;
 
         .location__icon {
             width: 30px;
