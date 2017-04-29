@@ -120,7 +120,7 @@ export default {
             },
             ticks: { x: 12, y: 3 },
             ticksFormat: function(d, i){
-              return timeformat(d);
+                return i === 0 ? '現在' : timeformat(d);
             },
             ticksTextSetting: function(selector){
               selector
