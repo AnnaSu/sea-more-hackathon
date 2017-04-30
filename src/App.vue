@@ -64,6 +64,9 @@ export default {
 .swiper-pagination-bullet {
   margin-right: 5px;
 }
+.swiper-pagination-bullet-active {
+    background-color: rgba(255,255,255,.9) !important;
+}
 
 .sea-more {
   font-family: Quicksand, Helvetica, Arial, sans-serif;
