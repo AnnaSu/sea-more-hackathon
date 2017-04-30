@@ -20,14 +20,14 @@
 <script>
 export default {
   name: 'indicator',
+  props: ['pageIndex'],
   data () {
-    return {
-        indicatorsRow1: [
+    var row1 = [[
             {
                 className: 'indicator-item rainfall',
                 name: '降雨機率',
                 icon: '/src/assets/icon_umbrella.svg',
-                value: '15%'
+                value: '10%'
             },
             {
                 className: 'indicator-item uv',
@@ -37,31 +37,111 @@ export default {
             },
             {
                 className: 'indicator-item temperature-diff',
-                name: '溫差',
+                name: '海水溫度',
                 icon: '/src/assets/icon_temp.svg',
-                value: '11°'
+                value: '22°'
             }
-        ],
-        indicatorsRow2: [
+        ],[
+            {
+                className: 'indicator-item rainfall',
+                name: '降雨機率',
+                icon: '/src/assets/icon_umbrella.svg',
+                value: '20%'
+            },
+            {
+                className: 'indicator-item uv',
+                name: '紫外線',
+                icon: '/src/assets/icon_uv.svg',
+                value: '中量'
+            },
+            {
+                className: 'indicator-item temperature-diff',
+                name: '海水溫度',
+                icon: '/src/assets/icon_temp.svg',
+                value: '28°'
+            }
+        ],[
+            {
+                className: 'indicator-item rainfall',
+                name: '降雨機率',
+                icon: '/src/assets/icon_umbrella.svg',
+                value: '10%'
+            },
+            {
+                className: 'indicator-item uv',
+                name: '紫外線',
+                icon: '/src/assets/icon_uv.svg',
+                value: '中量'
+            },
+            {
+                className: 'indicator-item temperature-diff',
+                name: '海水溫度',
+                icon: '/src/assets/icon_temp.svg',
+                value: '22°'
+            }
+        ]];
+    var row2 = [[
             {
                 className: 'indicator-item tidal',
                 name: '潮汐',
                 icon: '/src/assets/icon_tidal.svg',
-                value: '乾潮'
+                value: '退潮'
             },
             {
                 className: 'indicator-item wave-height',
                 name: '浪高',
                 icon: '/src/assets/icon_wave.svg',
-                value: '0.8m'
+                value: '1m'
             },
             {
                 className: 'indicator-item wind',
                 name: '風速',
                 icon: '/src/assets/icon_wind.svg',
-                value: '3.2km/hr'
+                value: '1km/hr'
             }
-        ]
+        ],[
+            {
+                className: 'indicator-item tidal',
+                name: '潮汐',
+                icon: '/src/assets/icon_tidal.svg',
+                value: '退潮'
+            },
+            {
+                className: 'indicator-item wave-height',
+                name: '浪高',
+                icon: '/src/assets/icon_wave.svg',
+                value: '0.56m'
+            },
+            {
+                className: 'indicator-item wind',
+                name: '風速',
+                icon: '/src/assets/icon_wind.svg',
+                value: '1km/hr'
+            }
+        ],[
+            {
+                className: 'indicator-item tidal',
+                name: '潮汐',
+                icon: '/src/assets/icon_tidal.svg',
+                value: '退潮'
+            },
+            {
+                className: 'indicator-item wave-height',
+                name: '浪高',
+                icon: '/src/assets/icon_wave.svg',
+                value: '1m'
+            },
+            {
+                className: 'indicator-item wind',
+                name: '風速',
+                icon: '/src/assets/icon_wind.svg',
+                value: '1km/hr'
+            }
+        ]];
+    var pageIndex = this.pageIndex;
+    return {
+        indicatorsRow1: row1[pageIndex],
+        indicatorsRow2: row2[pageIndex]
     }
   }
 }
@@ -69,6 +149,7 @@ export default {
 
 <style lang="css">
 .indicator-container {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,7 +166,8 @@ export default {
     bottom: 0px;
     width: 280px;
     height: 1px;
-    background-color: #20D4E9;
+    background-color: #485F79;
+    opacity: .7;
 }
 
 .indicator-row:nth-child(1) .indicator-item:nth-child(1) {
