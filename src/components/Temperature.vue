@@ -15,7 +15,7 @@ export default {
   props: ['pageIndex'],
   data () {
     var pageIndex = this.pageIndex;
-    var temp = ['氣溫 19°', '氣溫 17°', '氣溫 20°'];
+    var temp = ['氣溫 23°', '氣溫 27°', '氣溫 23°'];
     var weatherType = ["/src/assets/icon_sun.svg", "/src/assets/icon_cloud.svg", "/src/assets/icon_rain.svg"];
     return {
       tempStr: temp[pageIndex],
@@ -104,44 +104,44 @@ export default {
         var timeformat = d3.timeFormat('%H:00');
 
         var mainData = [[
-            { date: new Date(2016, 10, 1, 9), count: 18 },
-            { date: new Date(2016, 10, 1, 12), count: 24 },
-            { date: new Date(2016, 10, 1, 15), count: 26 },
-            { date: new Date(2016, 10, 1, 18), count: 22 },
-            { date: new Date(2016, 10, 1, 21),  count: 18 },
-            { date: new Date(2016, 10, 2, 0),  count: 18 },
-            { date: new Date(2016, 10, 2, 3), count: 15 },
-            { date: new Date(2016, 10, 2, 6), count: 16 },
-            { date: new Date(2016, 10, 2, 9), count: 18 },
-            { date: new Date(2016, 10, 2, 12), count: 25 },
-            { date: new Date(2016, 10, 2, 15), count: 25 },
-            { date: new Date(2016, 10, 2, 18), count: 20 }
+            { date: new Date(2017, 3, 30, 9), count: 23 },
+            { date: new Date(2017, 3, 30, 12), count: 24 },
+            { date: new Date(2017, 3, 30, 15), count: 25 },
+            { date: new Date(2017, 3, 30, 18), count: 26 },
+            { date: new Date(2017, 3, 30, 21),  count: 22 },
+            { date: new Date(2017, 4, 1, 0),  count: 20 },
+            { date: new Date(2017, 4, 1, 3), count: 19 },
+            { date: new Date(2017, 4, 1, 6), count: 19 },
+            { date: new Date(2017, 4, 1, 9), count: 26 },
+            { date: new Date(2017, 4, 1, 12), count: 26 },
+            { date: new Date(2017, 4, 1, 15), count: 25 },
+            { date: new Date(2017, 4, 1, 18), count: 23 }
         ],[
-            { date: new Date(2016, 10, 1, 9), count: 18 },
-            { date: new Date(2016, 10, 1, 12), count: 22 },
-            { date: new Date(2016, 10, 1, 15), count: 26 },
-            { date: new Date(2016, 10, 1, 18), count: 22 },
-            { date: new Date(2016, 10, 1, 21),  count: 18 },
-            { date: new Date(2016, 10, 2, 0),  count: 18 },
-            { date: new Date(2016, 10, 2, 3), count: 15 },
-            { date: new Date(2016, 10, 2, 6), count: 16 },
-            { date: new Date(2016, 10, 2, 9), count: 18 },
-            { date: new Date(2016, 10, 2, 12), count: 26 },
-            { date: new Date(2016, 10, 2, 15), count: 24 },
-            { date: new Date(2016, 10, 2, 18), count: 20 }
+            { date: new Date(2017, 3, 30, 9), count: 27 },
+            { date: new Date(2017, 3, 30, 12), count: 30 },
+            { date: new Date(2017, 3, 30, 15), count: 30 },
+            { date: new Date(2017, 3, 30, 18), count: 26 },
+            { date: new Date(2017, 3, 30, 21),  count: 25 },
+            { date: new Date(2017, 4, 1, 0),  count: 24 },
+            { date: new Date(2017, 4, 1, 3), count: 24 },
+            { date: new Date(2017, 4, 1, 6), count: 24 },
+            { date: new Date(2017, 4, 1, 9), count: 30 },
+            { date: new Date(2017, 4, 1, 12), count: 32 },
+            { date: new Date(2017, 4, 1, 15), count: 32 },
+            { date: new Date(2017, 4, 1, 18), count: 28 }
         ],[
-            { date: new Date(2016, 10, 1, 9), count: 18 },
-            { date: new Date(2016, 10, 1, 12), count: 24 },
-            { date: new Date(2016, 10, 1, 15), count: 26 },
-            { date: new Date(2016, 10, 1, 18), count: 22 },
-            { date: new Date(2016, 10, 1, 21),  count: 18 },
-            { date: new Date(2016, 10, 2, 0),  count: 18 },
-            { date: new Date(2016, 10, 2, 3), count: 15 },
-            { date: new Date(2016, 10, 2, 6), count: 16 },
-            { date: new Date(2016, 10, 2, 9), count: 18 },
-            { date: new Date(2016, 10, 2, 12), count: 25 },
-            { date: new Date(2016, 10, 2, 15), count: 25 },
-            { date: new Date(2016, 10, 2, 18), count: 20 }
+            { date: new Date(2017, 3, 30, 9), count: 23 },
+            { date: new Date(2017, 3, 30, 12), count: 26 },
+            { date: new Date(2017, 3, 30, 15), count: 25 },
+            { date: new Date(2017, 3, 30, 18), count: 26 },
+            { date: new Date(2017, 3, 30, 21),  count: 21 },
+            { date: new Date(2017, 4, 1, 0),  count: 20 },
+            { date: new Date(2017, 4, 1, 3), count: 20 },
+            { date: new Date(2017, 4, 1, 6), count: 19 },
+            { date: new Date(2017, 4, 1, 9), count: 25 },
+            { date: new Date(2017, 4, 1, 12), count: 26 },
+            { date: new Date(2017, 4, 1, 15), count: 25 },
+            { date: new Date(2017, 4, 1, 18), count: 23 }
         ]];
 
 

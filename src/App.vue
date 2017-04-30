@@ -11,11 +11,11 @@
       <swiper-slide><Pages pageIndex="2"/></swiper-slide>
       <!-- Optional controls -->
       <div class="space-man">
-          <div class="chat">太陽很大喔～建議中午時段不要曝曬超過20分鐘！</div>
+          <div class="chat">太陽很大喔～建議中午時段不要曝曬超過30分鐘！</div>
           <img src="/src/assets/spaceman.svg">
       </div>
     </swiper>
-  </div>  
+  </div>
 </template>
 
 <script>

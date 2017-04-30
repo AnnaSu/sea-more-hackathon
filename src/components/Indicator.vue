@@ -27,51 +27,51 @@ export default {
                 className: 'indicator-item rainfall',
                 name: '降雨機率',
                 icon: '/src/assets/icon_umbrella.svg',
-                value: '15%'
+                value: '10%'
             },
             {
                 className: 'indicator-item uv',
                 name: '紫外線',
                 icon: '/src/assets/icon_uv.svg',
-                value: '微量'
+                value: '中量'
             },
             {
                 className: 'indicator-item temperature-diff',
                 name: '海水溫度',
                 icon: '/src/assets/icon_temp.svg',
-                value: '20°'
+                value: '22°'
             }
         ],[
             {
                 className: 'indicator-item rainfall',
                 name: '降雨機率',
                 icon: '/src/assets/icon_umbrella.svg',
-                value: '0%'
+                value: '20%'
             },
             {
                 className: 'indicator-item uv',
                 name: '紫外線',
                 icon: '/src/assets/icon_uv.svg',
-                value: '無'
+                value: '中量'
             },
             {
                 className: 'indicator-item temperature-diff',
                 name: '海水溫度',
                 icon: '/src/assets/icon_temp.svg',
-                value: '19°'
+                value: '28°'
             }
         ],[
             {
                 className: 'indicator-item rainfall',
                 name: '降雨機率',
                 icon: '/src/assets/icon_umbrella.svg',
-                value: '15%'
+                value: '10%'
             },
             {
                 className: 'indicator-item uv',
                 name: '紫外線',
                 icon: '/src/assets/icon_uv.svg',
-                value: '微量'
+                value: '中量'
             },
             {
                 className: 'indicator-item temperature-diff',
@@ -85,57 +85,57 @@ export default {
                 className: 'indicator-item tidal',
                 name: '潮汐',
                 icon: '/src/assets/icon_tidal.svg',
-                value: '乾潮'
+                value: '退潮'
             },
             {
                 className: 'indicator-item wave-height',
                 name: '浪高',
                 icon: '/src/assets/icon_wave.svg',
-                value: '0.5m'
+                value: '1m'
             },
             {
                 className: 'indicator-item wind',
                 name: '風速',
                 icon: '/src/assets/icon_wind.svg',
-                value: '1.5km/hr'
+                value: '1km/hr'
             }
         ],[
             {
                 className: 'indicator-item tidal',
                 name: '潮汐',
                 icon: '/src/assets/icon_tidal.svg',
-                value: '乾潮'
+                value: '退潮'
             },
             {
                 className: 'indicator-item wave-height',
                 name: '浪高',
                 icon: '/src/assets/icon_wave.svg',
-                value: '0.3m'
+                value: '0.56m'
             },
             {
                 className: 'indicator-item wind',
                 name: '風速',
                 icon: '/src/assets/icon_wind.svg',
-                value: '1.2km/hr'
+                value: '1km/hr'
             }
         ],[
             {
                 className: 'indicator-item tidal',
                 name: '潮汐',
                 icon: '/src/assets/icon_tidal.svg',
-                value: '乾潮'
+                value: '退潮'
             },
             {
                 className: 'indicator-item wave-height',
                 name: '浪高',
                 icon: '/src/assets/icon_wave.svg',
-                value: '0.5m'
+                value: '1m'
             },
             {
                 className: 'indicator-item wind',
                 name: '風速',
                 icon: '/src/assets/icon_wind.svg',
-                value: '1.9km/hr'
+                value: '1km/hr'
             }
         ]];
     var pageIndex = this.pageIndex;
