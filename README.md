@@ -7,7 +7,7 @@
 ## 簡介
 ### Sea-More！
 
-![](./demo_gif_files/demo1 - change Pages.gif)
+![](https://github.com/AnnaSu/sea-more-hackathon/blob/master/demo_gif_files/demo1%20-%20change%20Pages.gif?raw=true)
 
 ```
 讓你看見更多海灘資訊！
