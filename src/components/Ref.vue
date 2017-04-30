@@ -15,7 +15,7 @@
         </article>
     </div>
     <div class="ref">
-        <h3 class="ref__title">彩妝教學</h3>
+        <h3 class="ref__title">防曬彩妝</h3>
         <article class="ref__article" v-for="ref in refs">
             <div  class="ref__article__cover"><img class="ref__article__img" :src="ref.coverImg" alt=""></div>
             <p class="ref__article__title">{{ref.title}}</p>
