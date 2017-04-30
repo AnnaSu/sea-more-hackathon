@@ -33,7 +33,9 @@ export default {
           app = document.querySelector('.sea-more');
           app.className = 'sea-more';
           app.classList.add('sea-more--' + bgColor[swiper.activeIndex]);
-          console.log(swiper.activeIndex)
+          var time = ['2017/4/30 上午 9 點', '2017/5/1 下午 12 點', '2017/5/1 下午 6 點'],
+          appTime = document.querySelector('.header__time__name');
+          appTime.innerText = time[swiper.activeIndex];
         }
       }
     }
