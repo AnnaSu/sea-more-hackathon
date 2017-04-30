@@ -166,7 +166,8 @@ export default {
     bottom: 0px;
     width: 280px;
     height: 1px;
-    background-color: #20D4E9;
+    background-color: #485F79;
+    opacity: .7;
 }
 
 .indicator-row:nth-child(1) .indicator-item:nth-child(1) {
