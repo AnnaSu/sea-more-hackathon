@@ -7,7 +7,7 @@
 ## 簡介
 ### Sea-More！
 
-![](https://api-2017.spaceappschallenge.org/team-photos/SlsaKNWnXTlVmTRv6G6wuEctzj0=/2015/width-800/)
+![](./demo_gif_files/demo1 - change Pages.gif)
 
 ```
 讓你看見更多海灘資訊！
