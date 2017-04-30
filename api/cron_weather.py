@@ -15,7 +15,7 @@ UV_ID = "O-A0005-001"
 TIDE_ID = "F-A0021-001"
 OCEAN_ID = "O-A0018-001"
 
-CWBKEY = "CWB-574A0062-1D41-409B-9046-DDA4D1EDD4A8"
+CWBKEY = "KEY"
 
 WEATHER_URL = "http://opendata.cwb.gov.tw/opendataapi?dataid={}&authorizationkey={}".format(WEATHER_ID, CWBKEY)
 UV_URL = "http://opendata.cwb.gov.tw/opendataapi?dataid={}&authorizationkey={}".format(UV_ID, CWBKEY)
